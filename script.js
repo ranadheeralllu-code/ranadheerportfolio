@@ -275,13 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ── Download Resume Button ──
-    const downloadBtn = document.getElementById('download-resume');
-    if (downloadBtn) {
-        downloadBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            alert('Replace this with a link to your actual resume PDF!');
-        });
-    }
+    // Resume link is set directly in href="./resume.pdf" in the HTML
 
     // ── Add spin animation ──
     const style = document.createElement('style');
