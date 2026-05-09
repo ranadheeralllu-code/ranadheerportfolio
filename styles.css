@@ -1779,7 +1779,7 @@ img {
 
 @media (max-width: 768px) {
     :root {
-        --section-padding: 80px 0;
+        --section-padding: 72px 0;
     }
 
     .nav-links {
@@ -1805,56 +1805,160 @@ img {
         display: block;
     }
 
+    /* ── Hero Mobile ── */
     .hero {
-        padding: 100px 24px 60px;
+        padding: 90px 16px 50px;
+        min-height: auto;
+    }
+
+    .hero-badge {
+        font-size: 0.72rem;
+        padding: 6px 14px;
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+
+    .hero-name {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+    }
+
+    .hero-greeting {
+        font-size: 0.95rem;
+    }
+
+    .hero-epigraph {
+        font-size: 0.85rem;
+        margin: 4px 0 2px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        min-height: 1.5em;
+    }
+
+    .hero-description {
+        font-size: 0.88rem;
+        line-height: 1.7;
+        margin-bottom: 24px;
     }
 
     .hero-photo-3d {
-        width: 220px;
-        height: 280px;
+        width: 200px;
+        height: 250px;
     }
 
     .hero-stats {
         flex-direction: column;
-        gap: 20px;
-        padding: 24px;
+        gap: 16px;
+        padding: 20px 16px;
+    }
+
+    .stat-number-static {
+        font-size: 1.4rem;
     }
 
     .stat-divider {
-        width: 60px;
+        width: 50px;
         height: 1px;
-    }
-
-    .about-highlights {
-        grid-template-columns: 1fr;
-    }
-
-    .hobbies-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-name {
-        font-size: clamp(2rem, 8vw, 3rem);
     }
 
     .scroll-indicator {
         display: none;
     }
 
+    /* ── Section Headers Mobile ── */
     .section-header {
-        margin-bottom: 48px;
+        margin-bottom: 40px;
     }
 
+    .section-title {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    .section-tag {
+        font-size: 0.75rem;
+        padding: 5px 14px;
+        letter-spacing: 2px;
+    }
+
+    /* ── Scale of Impact Mobile ── */
+    .impact-strip {
+        padding: 40px 0;
+    }
+
+    .impact-strip-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .impact-strip-card {
+        padding: 24px 20px;
+    }
+
+    .impact-strip-icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 14px;
+    }
+
+    .impact-strip-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .impact-strip-value {
+        font-size: 1.05rem;
+    }
+
+    .impact-strip-desc {
+        font-size: 0.82rem;
+    }
+
+    /* ── About Mobile ── */
+    .about-quick-badges {
+        gap: 10px;
+        margin-bottom: 32px;
+    }
+
+    .quick-info-item {
+        font-size: 0.8rem;
+        padding: 8px 14px;
+    }
+
+    .about-headline {
+        font-size: 1.25rem;
+    }
+
+    .about-columns {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .highlight-item {
+        padding: 14px;
+    }
+
+    /* ── Timeline Mobile ── */
     .timeline {
-        padding-left: 40px;
+        padding-left: 36px;
     }
 
     .timeline::before {
-        left: 10px;
+        left: 8px;
     }
 
     .timeline-marker {
-        left: -36px;
+        left: -34px;
     }
 
     .timeline-dot {
@@ -1862,20 +1966,164 @@ img {
         height: 12px;
     }
 
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.05rem;
+    }
+
+    .timeline-content h4 {
+        font-size: 0.85rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.85rem;
+        line-height: 1.7;
+    }
+
+    .timeline-badge {
+        font-size: 0.65rem;
+        padding: 3px 10px;
+    }
+
+    .timeline-tags {
+        gap: 6px;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+
+    /* ── Projects Mobile ── */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 24px 20px;
+    }
+
+    .project-title {
+        font-size: 1.05rem;
+    }
+
+    .project-desc {
+        font-size: 0.85rem;
+    }
+
     .project-impact {
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
+    }
+
+    /* ── Skills Mobile ── */
+    .skills-layout,
+    .skills-layout.skills-layout-3 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skills-category {
+        padding: 24px 20px;
+    }
+
+    .skills-category-title {
+        font-size: 1rem;
+    }
+
+    /* ── Principles Mobile ── */
+    .principles-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .principle-card {
+        padding: 24px 16px;
+    }
+
+    .principle-number {
+        font-size: 2rem;
+    }
+
+    .principle-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .principle-card p {
+        font-size: 0.8rem;
+    }
+
+    /* ── Education Mobile ── */
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+        padding: 24px 20px;
+    }
+
+    .education-achievements {
+        gap: 8px;
+    }
+
+    .education-achievements span {
+        font-size: 0.78rem;
+    }
+
+    /* ── Hobbies Mobile ── */
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .hobby-card {
+        padding: 24px 20px;
+    }
+
+    /* ── Contact Mobile ── */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-info p {
+        font-size: 0.88rem;
+    }
+
+    .contact-form-wrapper {
+        padding: 24px 20px;
     }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 16px;
+        padding: 0 14px;
+    }
+
+    :root {
+        --section-padding: 56px 0;
+    }
+
+    .hero-badge {
+        font-size: 0.65rem;
+        padding: 5px 12px;
+        text-align: center;
+    }
+
+    .hero-name {
+        font-size: 1.7rem;
     }
 
     .hero-cta {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
     }
 
     .btn {
@@ -1883,194 +2131,73 @@ img {
         justify-content: center;
     }
 
+    .hero-photo-3d {
+        width: 170px;
+        height: 210px;
+    }
+
+    .hero-stats {
+        gap: 12px;
+        padding: 16px 12px;
+    }
+
+    .stat-number-static {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    /* Principles go full width on very small screens */
+    .principles-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .principle-card {
+        padding: 20px 16px;
+    }
+
+    /* Impact strip tighter */
+    .impact-strip {
+        padding: 32px 0;
+    }
+
+    .impact-strip-card {
+        padding: 20px 16px;
+    }
+
+    /* About tighter */
+    .about-quick-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-headline {
+        font-size: 1.1rem;
+    }
+
+    /* Timeline tighter */
+    .timeline-content {
+        padding: 16px;
+    }
+
+    .timeline-item {
+        margin-bottom: 32px;
+    }
+
+    /* Contact form */
     .contact-form-wrapper {
-        padding: 24px;
-    }
-}
-
-/* ============================================
-   HERO EPIGRAPH
-   ============================================ */
-.hero-epigraph {
-    font-family: var(--font-secondary);
-    font-size: 1rem;
-    color: var(--text-muted);
-    margin: 8px 0 4px;
-    letter-spacing: 0.02em;
-}
-
-/* Static stat number (replaces animated counter) */
-.stat-number-static {
-    font-family: var(--font-primary);
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: var(--text-primary);
-    display: block;
-    line-height: 1.2;
-}
-
-/* ============================================
-   SCALE OF IMPACT STRIP
-   ============================================ */
-.impact-strip {
-    padding: 60px 0;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(168, 85, 247, 0.05));
-    border-top: 1px solid var(--border-subtle);
-    border-bottom: 1px solid var(--border-subtle);
-}
-
-.impact-strip-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.impact-strip-card {
-    text-align: center;
-    padding: 36px 24px;
-    background: var(--bg-card);
-    border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-lg);
-    transition: all var(--transition-base);
-    position: relative;
-    overflow: hidden;
-}
-
-.impact-strip-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: var(--gradient-primary);
-    opacity: 0;
-    transition: opacity var(--transition-base);
-}
-
-.impact-strip-card:hover {
-    border-color: var(--border-accent);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-glow);
-}
-
-.impact-strip-card:hover::before {
-    opacity: 1;
-}
-
-.impact-strip-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: rgba(99, 102, 241, 0.1);
-    color: var(--accent-primary-light);
-    margin-bottom: 20px;
-}
-
-.impact-strip-value {
-    font-family: var(--font-primary);
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 8px;
-}
-
-.impact-strip-desc {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    line-height: 1.6;
-}
-
-/* ============================================
-   OPERATING PRINCIPLES
-   ============================================ */
-.principles-section {
-    background: var(--bg-secondary);
-}
-
-.principles-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.principle-card {
-    padding: 32px 24px;
-    background: var(--bg-card);
-    border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-lg);
-    text-align: center;
-    transition: all var(--transition-base);
-    position: relative;
-}
-
-.principle-card:hover {
-    border-color: var(--border-accent);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-glow);
-}
-
-.principle-number {
-    font-family: var(--font-primary);
-    font-size: 2.5rem;
-    font-weight: 900;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    line-height: 1;
-    margin-bottom: 16px;
-    opacity: 0.6;
-}
-
-.principle-card h3 {
-    font-family: var(--font-primary);
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 10px;
-}
-
-.principle-card p {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    line-height: 1.6;
-}
-
-/* ============================================
-   FOOTER UPDATED LINE
-   ============================================ */
-.footer-updated {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    margin-top: 4px;
-    opacity: 0.7;
-}
-
-/* ============================================
-   RESPONSIVE — NEW SECTIONS
-   ============================================ */
-@media (max-width: 768px) {
-    .impact-strip-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        padding: 20px 16px;
     }
 
-    .principles-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
+    .contact-method {
+        padding: 12px;
     }
-}
 
-@media (max-width: 480px) {
-    .principles-grid {
-        grid-template-columns: 1fr;
+    /* Footer */
+    .footer-content {
+        padding: 24px 0;
     }
 }
