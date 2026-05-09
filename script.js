@@ -61,10 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // ── Typing Effect ──
     const typedTextElement = document.getElementById('typed-text');
     const phrases = [
-        'PGP Candidate @ ISB Hyderabad',
+        'Incoming AVP, Operations — Trust & Safety',
         'Ex-Superintendent, GST & Customs (CBIC)',
         '~10 Years in Government | Entrepreneur',
-        'Strategy · Operations · Product · Consulting',
+        'Operations · Strategy · Risk & Compliance · Trust & Safety',
         'Turning Governance Rigour into Business Impact'
     ];
     let phraseIndex = 0;

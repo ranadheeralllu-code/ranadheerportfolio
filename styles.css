@@ -1268,6 +1268,10 @@ img {
     gap: 28px;
 }
 
+.skills-layout.skills-layout-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .skills-category {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
