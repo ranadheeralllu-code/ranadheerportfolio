@@ -652,6 +652,66 @@ img {
     gap: 32px;
 }
 
+/* Chapter Flow Layout */
+.about-chapters {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.about-chapter {
+    display: flex;
+    gap: 28px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--border-subtle);
+    align-items: flex-start;
+}
+
+.about-chapter:first-child {
+    padding-top: 0;
+}
+
+.about-chapter:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.chapter-marker {
+    flex-shrink: 0;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding-top: 4px;
+}
+
+.chapter-num {
+    font-family: var(--font-primary);
+    font-size: 2.2rem;
+    font-weight: 900;
+    line-height: 1;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.5;
+}
+
+.chapter-label {
+    font-family: var(--font-primary);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent-primary-light);
+}
+
+.about-chapter .about-text {
+    margin-bottom: 0;
+    flex: 1;
+}
+
 .about-text {
     font-size: 1rem;
     color: var(--text-secondary);
@@ -1933,6 +1993,27 @@ img {
     .about-columns {
         grid-template-columns: 1fr;
         gap: 0;
+    }
+
+    .about-chapter {
+        flex-direction: column;
+        gap: 12px;
+        padding: 24px 0;
+    }
+
+    .chapter-marker {
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .chapter-num {
+        font-size: 1.5rem;
+    }
+
+    .chapter-label {
+        font-size: 0.72rem;
     }
 
     .about-text {
